@@ -1,6 +1,7 @@
 :root{
     --main-color: #e5e7eb;
     --secondary-color : #0ea5e9;
+    --secondary-text-color: grey;
 
 }
 * {
@@ -180,7 +181,7 @@ button{
     justify-content: stretch;
 }
 .description{
-    color: grey;
+    color: var(--secondary-text-color);
     flex:1;
 }
 .title{
@@ -205,6 +206,7 @@ button{
     border-radius: 2%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 1em;
     /* gap: 1em; */
 
 }
@@ -214,10 +216,6 @@ button{
     background-color: var(--main-color); */
     margin: 0;
     padding: 0;
-}
-
-.announcements{
-    margin-bottom: 1em;
 }
 
 .announcement p {
@@ -232,3 +230,50 @@ button{
     border-bottom: 0px;
     padding-bottom: 0rem;
 }
+
+/* Trend Page */
+.trending{
+    background-color: white;
+    padding: 1em;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    /* flex: 1; */
+}
+.trend{
+    display: flex;
+    gap:1em;
+
+}
+.trend-pic{
+    height: 3em;
+}
+
+.trend-text p:nth-of-type(2){
+    color: var(--secondary-text-color)
+}
+
+
+/* Aside Layout */
+/* .aside{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+}
+
+.a{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.t{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.trending-content{
+    flex: 1;
+} */
+
